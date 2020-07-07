@@ -9,7 +9,7 @@ str(wbcd)
 wbcd <- wbcd[-1]
 table(wbcd$blueWins)
 wbcd$blueWins <- factor(wbcd$blueWins, levels = c("0", "1"),
-                         labels = c("Lose", "Win"))
+                         labels = c("Win", "Lose"))
 round(prop.table(table(wbcd$blueWins)) * 100, digits = 1)
 
 #create normalization function
