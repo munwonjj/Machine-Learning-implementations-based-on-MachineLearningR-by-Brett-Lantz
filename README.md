@@ -10,8 +10,8 @@ Link to the Kaggle website: https://www.kaggle.com/bobbyscience/league-of-legend
 
 There are total of 19 features per team. Some major features include kills, deaths, gold, experience and level.
 
-The following was the target column
-Blue Team Won: 0
+The following was the target column<br/>
+Blue Team Won: 0<br/>
 Red Team Won: 1
 
 First of all, the GameID column was removed from the dataset since it it only a unique identifier that does not provide useful information regarding analyzing the data. After dividing the train and test dataset to 80% and 20% of respectively, knn model was implemented with k = 45. To evaluate how well the predicted classes in the test prediction vector matches with the known values in the test labels, CrossTable function was used from the gmodels package.
